@@ -33,5 +33,5 @@ jobs:
         run: npm install -g surge
         
       - name: deploying app
-        run: surge ./bootcampUsama.surge.sh --token ${(secrets.SURGE_TOKEN)}
+        run: surge ./bootcampUsama.surge.sh --token ${{secrets.SURGE_TOKEN}}
       
